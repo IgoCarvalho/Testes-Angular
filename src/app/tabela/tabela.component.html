@@ -1,0 +1,29 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Pos</th>
+      <th scope="col" class="col-9">Nome</th>
+      <th scope="col">Pjog</th>
+      <th scope="col">V</th>
+      <th scope="col">E</th>
+      <th scope="col">D</th>
+      <th scope="col">Gf</th>
+      <th scope="col">Gs</th>
+      <th scope="col">Pts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let time of tabela">
+      <!-- <app-time-tabela [time]="time"></app-time-tabela> -->
+      <th scope="row"> {{ time.position }} </th>
+      <td class="col-9"> {{ time.name }} </td>
+      <td> {{ time.overall.gp }} </td>
+      <td> {{ time.overall.w }} </td>
+      <td> {{ time.overall.d }} </td>
+      <td> {{ time.overall.l }} </td>
+      <td> {{ time.overall.gs }} </td>
+      <td> {{ time.overall.ga }} </td>
+      <td> {{ time.total.p }} </td>
+    </tr>
+  </tbody>
+</table>
